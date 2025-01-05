@@ -21,6 +21,9 @@
 
             <label for="password">Password</label>
             <input type="password" id="Password" placeholder="Password" required minlength="6" autofocus><br><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required><br><br>
 
             <label for="color">Select color</label>
             <input type="color" id="color" value="#FF0000"><br><br>
@@ -56,12 +59,12 @@
 
             Select State
             <select >
-                <option>select state</option>
+                <option selected disabled>select state</option>
                 <optgroup label="India">
-                    <option>Karnataka</option>
-                    <option>Kerla</option>
-                    <option>Tamilnadu</option>
-                    <option>UP</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="kerla">Kerla</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="UP">UP</option>
                 </optgroup>
                 <option>colombia</option>
                 <option>peru</option>
@@ -74,10 +77,8 @@
 
             <!-- embedding the  youtube video/ or website  -->
 
-            <iframe width="350" height="215" src="https://www.youtube.com/embed/BsDoLVMnmZs"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GoHDolSJxIQ?si=MYL7CEhff5OdfAMK" title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <br><br>
 
             <!-- emmbedding different website into our website -->
@@ -89,12 +90,17 @@
             <br><br>
 
             <!-- Embedding audio tag-->
-            <audio src="audio link" controls></audio>
+            <audio src="deepak.mp4" controls></audio>
             <br><br>
-            Select file<input type="file" min="1"><br><br>
-            <input type="submit" title="send" value="SEND"><input type="reset"><br><br>
-            <label for="a">
-            </label>
+
+            <!-- Uploading file -->
+
+            <label for="upload">Upload file</label>
+            <input type="file" id="upload" min="1"><br><br>
+
+            <input type="submit" title="send" value="SEND">
+            <input type="reset"><br><br>
+            
         </fieldset>
 
     </form>
