@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body bgcolor="gold">
+
+
+    <!-- form tag is used to take input from the user -->
+    <form>
+        <fieldset style="color: rgb(20, 21, 21); background-color: aqua;">
+            <legend>Enquiry</legend><br>
+
+            <label for="Name">Enter name</label> 
+            <input  id="Name"  type="text" placeholder="please enter your name" required value="prateek" readonly><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="Password" placeholder="Password" required minlength="6" autofocus><br><br>
+
+            <label for="color">Select color</label>
+            <input type="color" id="color" value="#FF0000"><br><br>
+
+            <label for="age">Enter age</label>
+             <input type="number" min="1" max="18"><br><br>
+
+             <label for="date">Enter date</label>
+             <input type="date"><br><br>
+          
+             <label for="phone">Phone</label>
+             <input type="tel" name="phone" placeholder="Phone" /><br />
+            <!-- Radio Button -->
+
+            Select Gender
+            <input type="radio" name="gen" id="Male">
+            <label for="Male"> Male</label>
+
+            <input type="radio" id="Female" name="gen">
+            <label for="Female">Female</label>
+            <br><br>
+
+            <!-- Checkbox -->
+
+            Select Subject
+            <input type="checkbox" id="C" checked>
+            <label for="C">C</label>
+            <input type="checkbox" id="C++">
+            <label for="C++">C++</label>
+            <input type="checkbox">Java<br><br>
+
+            <!-- Dropdown -->
+
+            Select State
+            <select >
+                <option>select state</option>
+                <optgroup label="India">
+                    <option>Karnataka</option>
+                    <option>Kerla</option>
+                    <option>Tamilnadu</option>
+                    <option>UP</option>
+                </optgroup>
+                <option>colombia</option>
+                <option>peru</option>
+            </select><br><br>
+
+            <!-- Text area -->
+            <label for="about">Enter the details</label>
+
+            <textarea name="about" id="about" cols="30" rows="5" placeholder="Tell me about yourself"></textarea><br><br>
+
+            <!-- embedding the  youtube video/ or website  -->
+
+            <iframe width="350" height="215" src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br><br>
+
+            <!-- emmbedding different website into our website -->
+            <iframe src="https://www.wikipedia.com" frameborder="0" width="600"></iframe>
+            <br><br>
+            
+            <!-- embedding video  -->
+            <video src="deepak.mp4" controls   loop muted poster="deepak.jpeg" width="400"></video>
+            <br><br>
+
+            <!-- Embedding audio tag-->
+            <audio src="audio link" controls></audio>
+            <br><br>
+            Select file<input type="file" min="1"><br><br>
+            <input type="submit" title="send" value="SEND"><input type="reset"><br><br>
+            <label for="a">
+            </label>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
