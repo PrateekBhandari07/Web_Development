@@ -1,0 +1,77 @@
+/* Universal selector */
+*{
+    font-family: arial;
+    font-size: 20px;
+}
+
+/* element selector */
+div{
+    padding: 20px;
+    color: rgb(38, 30, 30);
+}
+
+/* id selector */
+#id{
+    background-color: green;
+    color: white;
+}
+
+/* class selector */
+.class{
+    background-color: blue;
+    color: white;
+}
+
+/* child selector */
+/* It will style only child h2 */
+.combinators > h2{
+    background-color: rgb(225, 23, 239);
+    color: black;
+}
+
+/* decendant selector */
+/* it will style all the h2 inside combinators2 including child or decendant */
+.combinators2  h2{
+    background-color: rgb(225, 23, 239);
+    color: black;
+}
+
+
+
+
+ 
+/* pseduo selector */
+.pseudo:hover{
+    background-color: rgb(225, 23, 239);
+    color: rgb(18, 11, 238);
+    
+}
+/* color while i click through mouse */
+.pseudo:active{
+    background-color: rgb(44, 196, 201);
+    color: rgb(55, 95, 56);
+    
+}
+/* link color inital */
+.pseudo2:link{
+    color: rgb(165, 50, 4);
+}
+/* link color after visited */
+.pseudo2:visited{
+    color: rgb(95, 241, 107);
+}
+ 
+/* First child  */
+/* It will style p where and all it is first child of an element */
+p:first-child{
+    background-color: rgb(242, 217, 56);
+    color: black;
+}
+
+
+/* It will style p where and all it is last child of an element */
+
+p:last-child{
+    background-color: rgb(94, 146, 142);
+    color: black;
+}
